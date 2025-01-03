@@ -31,4 +31,20 @@
   <p>made with ♥️ by Diego250x</p>
 </div>
 </body>
+  <script>
+window.oncontextmenu = (e) => {
+  e.preventDefault();
+}
+function disabletext(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disabletext
+document.onclick=reEnable
+}
+</script>
 </html>
