@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web test</title>
+</head>
+  <style>
+    html {
+      cursor: url("http://www.rw-designer.com/cursor-download.php?id=1753"), default;
+    }
+    
+    body {
+    font-family: 'Verdana','sans-serif';
+    color: #000;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+span {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+button, input, a:hover {
+    cursor: pointer;
+}
+
+a, a:visited {
+    color: green;
+  font-weight: bold;
+}
+
+a:hover, a:active {
+    color: red;
+}
+  </style>
+<body>
+  <hr>
+<marquee>Best free API</marquee>
+<hr>
+<center>
+<span><a target="_blank" href="/ArcadiaAPI 2 v0.0.1.7z">Download!</a></span><br>
+<span>Password: arcadia</span><br>
+</center>
+<hr>
+</body>
+<script>
+    window.oncontextmenu = (e) => {
+      e.preventDefault();
+    }
+    function disabletext(e){
+    return false
+    }
+    function reEnable(){
+    return true
+    }
+    document.onselectstart=new Function ("return false")
+    if (window.sidebar){
+    document.onmousedown=disabletext
+    document.onclick=reEnable
+    }
+    </script>
+</html>
